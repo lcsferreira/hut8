@@ -1,11 +1,9 @@
 let fullName = "Lucas Ferreira";
-let employee = false;
-let teacher = false;
+let employee = true;
+let teacher = true;
 
-if (teacher && employee) {
-  console.log(
-    `Parabéns ${fullName}! Você tem acesso a nossa linha de crédito especial!`
-  );
+if (!teacher && !employee) {
+  console.log("Ops! parece que você não está na base dados!");
 } else if (!employee && teacher) {
   console.log(
     `${fullName} infelzimente você não tem uma linha de crédito disponível`
@@ -15,5 +13,7 @@ if (teacher && employee) {
     `${fullName}, você tem acesso a nossa linha de crédito para servidores`
   );
 } else {
-  console.log("Ops! parece que você não está na base dados!");
+  console.log(
+    `Parabéns ${fullName}! Você tem acesso a nossa linha de crédito especial!`
+  );
 }
