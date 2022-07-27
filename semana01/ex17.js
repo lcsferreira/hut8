@@ -5,8 +5,8 @@ let gameDuration;
 
 if (startHour > endHour) {
   gameDuration = endHour - startHour + 24;
-  console.log(gameDuration);
+  console.log(`${gameDuration} Horas`);
 } else {
   gameDuration = endHour - startHour;
-  console.log(gameDuration);
+  console.log(`${gameDuration} Horas`);
 }
