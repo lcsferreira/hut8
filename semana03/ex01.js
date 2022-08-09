@@ -1,11 +1,7 @@
 let totalAmount = 576;
 
 const canSubtract = (amount, bankNote) => {
-  if (amount - bankNote >= 0) {
-    return true;
-  } else {
-    return false;
-  }
+  amount - bankNote >= 0 ? true : false;
 };
 
 const printBankNotes = ({
