@@ -119,16 +119,9 @@ const filterAbovePrice = (books, price) => {
 };
 
 const searchByName = (books, name) => {
-  // return books.find(({ nome }) => {
-  //   nome === name;
-  // });
-  let filteredBook;
-  books.forEach((book) => {
-    if (book.nome === name) {
-      filteredBook = book;
-    }
+  return books.find(({ nome }) => {
+    return nome === name;
   });
-  return filteredBook;
 };
 
 const searchByAuthor = (books, author) => {
